@@ -163,9 +163,7 @@ header{
 .piee{
     background-color: rgb(255, 136, 0);
     color: aliceblue;
-    padding: 0;
-    margin: 0;
-    position: relative;
+    position:relative;
     display: center;
     bottom: 0;
     width: 100%;
@@ -173,7 +171,12 @@ header{
     align-items: flex-end;
     text-align: center;
     grid-area: piee;
+    clear: both;
 }
+
+.asi{
+    min-height: 100vh
+  }
 
 .box{
     margin: 10px auto;
@@ -189,6 +192,11 @@ header{
     flex-direction: column;
     gap: 20px;
     border-radius: 30px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.623);
+}
+
+.productos :hover {
+    transform: scale(1.1,1.1);
 }
 
 .prod-img {
@@ -205,6 +213,24 @@ header{
     justify-content: space-around;
 }
 
+/*====Animations====*/
+
+.logo :hover{
+    transform: rotate(-15deg)
+}
+
+.tx-lg :hover{
+    transform: rotate(0deg); /*no puedo dejar el txt quieto*/
+}
+
+.menu :hover {
+    transform: scale(1.5,1.5);
+}
+
+.botones-inicio :hover{
+    transform: scale(2,2);
+}
+
 /*GRIDS*/
 
 .grid-contenedor{
@@ -216,6 +242,10 @@ header{
         "hea hea hea"
         "mai mai asi"
         "piee piee piee";
+}
+
+.body{
+    margin: 0; /*quiero que el footer no me quede flotando (como por ej, en productos), como hago?*/
 }
 
 .grid-contenedor2{
